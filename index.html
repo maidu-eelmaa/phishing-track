@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Suunamine...</title>
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+  emailjs.init("JlOo_wDGMZ0rGLfJa");
+
+  emailjs.send("service_ui0b7ut", "template_h1s81aj", {
+    time: new Date().toLocaleString("et-ET")
+  }).then(function() {
+    console.log("Saadetud!");
+  });
+
+  setTimeout(function() {
+    window.location.href = "https://www.energia.ee";
+  }, 500);
+</script>
+</body>
+</html>
